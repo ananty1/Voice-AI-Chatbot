@@ -33,7 +33,7 @@ async def read_item(item_id: int, q: Union[str, None] = None):
     
     return {"item_id": item_id, "q": q}
 
-@app.post("/post-audio/")
+@app.post("/post-audio")
 async def post_audio(file: UploadFile):
     
     audio_file_path = f"./functions/{file.filename}"
