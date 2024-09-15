@@ -78,7 +78,7 @@ const ChatBot = () => {
                 const formdata = new FormData();
                 formdata.append("file", audioAsBlob, "audioFile.wav");
                 await axios.post(
-                    "http://localhost:8000/post-audio", formdata, {
+                    "https://voice-ai-chatbot.vercel.app/post-audio", formdata, {
                     headers: { "Content-Type": "audio/mpeg" },
                     responseType: "arraybuffer",
                 }
