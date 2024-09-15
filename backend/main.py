@@ -12,8 +12,8 @@ app = FastAPI()
 
 origins = [
     'http://localhost:3000',
-    'https://voice-ai-chatbot-zmq6.vercel.app/'
-    'https://voice-ai-chatbot-zmq6.vercel.app'
+    'https://voice-ai-chatbot-zmq6.vercel.app',
+    'https://voice-ai-chatbot.vercel.app'
 ]
 
 app.add_middleware(
