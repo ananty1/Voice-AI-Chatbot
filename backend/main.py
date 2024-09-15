@@ -55,5 +55,9 @@ async def post_audio(file: UploadFile):
     return StreamingResponse(open(tts_file_path, "rb"), media_type="audio/wav")
 
 
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app)
+
 
 

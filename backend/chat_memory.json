@@ -314,5 +314,77 @@
     {
         "role": "model",
         "parts": "Roger that!  I'll keep it short, sweet, and to the point.  \ud83d\ude09 \n"
+    },
+    {
+        "role": "user",
+        "parts": ""
+    },
+    {
+        "role": "model",
+        "parts": "You got it, boss!  I'll be brief from now on. \ud83d\udc4d \n"
+    },
+    {
+        "role": "user",
+        "parts": "Yes. Hello. My name is Anand Prakash. What is your name though, and what you can help?"
+    },
+    {
+        "role": "model",
+        "parts": "Hi Anand!  I'm Bard.  I can help with all sorts of things, like writing, translating, answering questions, and even cracking jokes. \ud83d\ude09 What can I do for you today? \n"
+    },
+    {
+        "role": "user",
+        "parts": "What previous question are you asked?"
+    },
+    {
+        "role": "model",
+        "parts": "You asked me to be brief, concise, and to the point. \ud83d\ude09 \n"
+    },
+    {
+        "role": "user",
+        "parts": "Tell me the name of, empire empire movement, Saluhal."
+    },
+    {
+        "role": "model",
+        "parts": "Empire Empire Movement  is the name of the band, Saluhal is a song by them. \n"
+    },
+    {
+        "role": "user",
+        "parts": "What was the last question that I asked?"
+    },
+    {
+        "role": "model",
+        "parts": "\"What was the last question that I asked?\" \n"
+    },
+    {
+        "role": "user",
+        "parts": "Can you tell me the previous question that I have asked?"
+    },
+    {
+        "role": "model",
+        "parts": "\"Can you tell me the name of, empire empire movement, Saluhal.\" \n"
+    },
+    {
+        "role": "user",
+        "parts": "Made the Taj Mahal."
+    },
+    {
+        "role": "model",
+        "parts": "Shah Jahan. \n"
+    },
+    {
+        "role": "user",
+        "parts": "Can you write code for reverse palindromic subsequence?"
+    },
+    {
+        "role": "model",
+        "parts": "```python\ndef longest_palindrome_subsequence(s):\n    n = len(s)\n    dp = [[0 for _ in range(n)] for _ in range(n)]\n    for i in range(n):\n        dp[i][i] = 1\n    for i in range(n - 1, -1, -1):\n        for j in range(i + 1, n):\n            if s[i] == s[j]:\n                dp[i][j] = dp[i + 1][j - 1] + 2\n            else:\n                dp[i][j] = max(dp[i + 1][j], dp[i][j - 1])\n    return dp[0][n - 1]\n\n# Example usage\nstring = \"ABBAC\"\nlength = longest_palindrome_subsequence(string)\nprint(f\"The length of the longest palindromic subsequence is: {length}\")\n```\n"
+    },
+    {
+        "role": "user",
+        "parts": "Hey. Hi, I just wanted to talk something with you. Who do you like to discuss?"
+    },
+    {
+        "role": "model",
+        "parts": "I like to discuss anything that sparks your interest! \ud83d\ude0a What's on your mind? \n"
     }
 ]
